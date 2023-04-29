@@ -1,7 +1,7 @@
 from html.parser import HTMLParser
 import urllib.request
 
-url = urllib.request.urlopen("https://home.nzcity.co.nz/tvnow/tvguide.aspx")
+url = urllib.request.urlopen("") #edit this - put in the NZCity TVNow guide webpage
 html_as_string = url.read().decode()
 url.close()
 
