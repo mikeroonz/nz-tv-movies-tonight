@@ -10,4 +10,4 @@ getmovies.py
 getmovies-advanced.py
   - uses the HTMLParser library - requires a bit of objecty knowledge.
 
-Sure there's great webscraping libraries which would make for a more complete and flexible program, but this is intentionally a little 'closer to the metal' for educational purposes.
+Sure there's great webscraping and regular expression libraries which would make for a more complete and flexible program, but this is intentionally a little 'closer to the metal' for educational purposes.
