@@ -22,9 +22,13 @@ class Parse(HTMLParser):
     def handle_endtag(self, tag):
         if tag == "td":
             if self.data_is_movie:
-                print(self.movie_info)
+                movie_time = self.movie_info[4][1:-1] #trim the backets
+                movie_title = self.movie_info[0][7:-1] #trim the string "Movie: ", and trailing space
+                movie_rating = self.movie_info[2]
+                print(movie_time, movie_title, movie_rating)
                 self.data_is_movie = False
                 self.movie_info.clear()
 
 testParser = Parse()
 testParser.feed(html)
+
